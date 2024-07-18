@@ -1,1 +1,14 @@
-{}
+{
+  "extends": [
+    "github>bjw-s/renovate-config",
+    "github>bjw-s/renovate-config:automerge-github-actions",
+  ],
+  "nix": {
+    "enabled": true
+  },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "includeForks": true
+}
