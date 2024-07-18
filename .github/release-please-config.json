@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "packages": {
+    "deploy/helm": {
+      "release-type": "helm"
+    },
+    "cmd/init": {
+      "component": "init"
+    },
+    "cmd/webhook": {
+      "component": "cmd-webhook"
+    },
+    "internal/admission_review": {
+      "component": "admission_review"
+    },
+    "internal/logger": {
+      "component": "logger"
+    },
+    "pkg/cert-generator": {
+      "component": "cert-generator"
+    },
+    "pkg/mutator": {
+      "component": "mutator"
+    },
+    "pkg/webhook": {
+      "component": "webhook"
+    }
+  },
+  "release-type": "go"
+}
