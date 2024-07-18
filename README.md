@@ -1,16 +1,18 @@
 # k8s-pod-mutator-webhook
 [![Webhook Image Build](https://img.shields.io/docker/cloud/automated/bohlenc/k8s-pod-mutator-webhook?label=webhook%20build)](https://hub.docker.com/r/bohlenc/k8s-pod-mutator-webhook) [![Webhook Image Version](https://img.shields.io/docker/v/bohlenc/k8s-pod-mutator-webhook?label=webhook&sort=semver)](https://hub.docker.com/r/bohlenc/k8s-pod-mutator-webhook) [![Init Image Build](https://img.shields.io/docker/cloud/automated/bohlenc/k8s-pod-mutator-init?label=init%20build)](https://hub.docker.com/r/bohlenc/k8s-pod-mutator-webhook) [![Init Image Version](https://img.shields.io/docker/v/bohlenc/k8s-pod-mutator-init?label=init&sort=semver)](https://hub.docker.com/r/bohlenc/k8s-pod-mutator-init)
 
-This is a Kubernetes Mutating Admission Webhook (see https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/). 
+:warning: Friendly fork [bohlenc/k8s-pod-mutator-webhook](https://github.com/bohlenc/k8s-pod-mutator-webhook)
+
+This is a Kubernetes Mutating Admission Webhook (see https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/).
 It can apply arbitrary changes (a "patch") to a Pod's manifest. A patch can do anything from adding or changing metadata to containers and init-containers with volumes.
 
-The Kubernetes API server only supports communication with webhooks over HTTPS - an init-container is included that automates cert generation 
+The Kubernetes API server only supports communication with webhooks over HTTPS - an init-container is included that automates cert generation
 and any necessary configuration (i.e. applying the `caBundle` to the `MutatingWebhookConfiguration`).
 
 
 ## Problem Statement
 
-It is a recurring requirement in Kubernetes deployments to transparently mutate Pod manifests - either to add new functionality transparently to existing deployments 
+It is a recurring requirement in Kubernetes deployments to transparently mutate Pod manifests - either to add new functionality transparently to existing deployments
 and applications, or to enforce compliance and other policies and requirements.
 
 This webhook provides a flexible and scalable solution to those problems.
@@ -22,8 +24,8 @@ This webhook provides a flexible and scalable solution to those problems.
 
 Path to the YAML file containing the patch to be applied to eligible Pods (see https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.20/#pod-v1-core for help).
 
-Patches support wildcards ("*") instead of specific names for containers, init-containers and volumes. 
-If a wildcard is specified, the operation is applied to all existing containers/init-containers/volumes (see [examples](#Examples)). 
+Patches support wildcards ("*") instead of specific names for containers, init-containers and volumes.
+If a wildcard is specified, the operation is applied to all existing containers/init-containers/volumes (see [examples](#Examples)).
 
 A patch can contain wildcard and regular operations simultaneously.
 
