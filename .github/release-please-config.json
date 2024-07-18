@@ -5,25 +5,25 @@
       "release-type": "helm"
     },
     "cmd/init": {
-      "component": "init"
+      "component": "k8s-pod-mutator-webhook"
     },
     "cmd/webhook": {
-      "component": "cmd-webhook"
+      "component": "k8s-pod-mutator-webhook"
     },
     "internal/admission_review": {
-      "component": "admission_review"
+      "component": "k8s-pod-mutator-webhook"
     },
     "internal/logger": {
-      "component": "logger"
+      "component": "k8s-pod-mutator-webhook"
     },
     "pkg/cert-generator": {
-      "component": "cert-generator"
+      "component": "k8s-pod-mutator-webhook"
     },
     "pkg/mutator": {
-      "component": "mutator"
+      "component": "k8s-pod-mutator-webhook"
     },
     "pkg/webhook": {
-      "component": "webhook"
+      "component": "k8s-pod-mutator-webhook"
     }
   },
   "release-type": "go"
