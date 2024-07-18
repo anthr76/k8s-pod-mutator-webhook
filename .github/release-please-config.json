@@ -2,28 +2,15 @@
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "packages": {
     "deploy/helm": {
-      "release-type": "helm"
+      "release-type": "helm",
+      "component": "k8s-pod-mutator-webhook-helm"
     },
-    "cmd/init": {
-      "component": "k8s-pod-mutator-webhook"
-    },
-    "cmd/webhook": {
-      "component": "k8s-pod-mutator-webhook"
-    },
-    "internal/admission_review": {
-      "component": "k8s-pod-mutator-webhook"
-    },
-    "internal/logger": {
-      "component": "k8s-pod-mutator-webhook"
-    },
-    "pkg/cert-generator": {
-      "component": "k8s-pod-mutator-webhook"
-    },
-    "pkg/mutator": {
-      "component": "k8s-pod-mutator-webhook"
-    },
-    "pkg/webhook": {
-      "component": "k8s-pod-mutator-webhook"
+    "./": {
+      "component": "k8s-pod-mutator-webhook",
+      "exclude-paths": [
+        ".github",
+        "deploy"
+      ]
     }
   },
   "release-type": "go"
