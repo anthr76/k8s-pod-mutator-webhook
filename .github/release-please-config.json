@@ -8,10 +8,10 @@
     ".": {
       "component": "k8s-pod-mutator-webhook",
       "exclude-paths": [
-        ".github",
         "deploy"
       ]
     }
   },
-  "release-type": "go"
+  "release-type": "go",
+  "pull-request-title-pattern": "chore${scope}: Release${component} v${version}"
 }
