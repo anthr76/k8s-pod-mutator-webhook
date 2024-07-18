@@ -3,7 +3,7 @@ init:
   logLevel: info
 
   image:
-    repository: bohlenc/k8s-pod-mutator-init
+    repository: ghcr.io/anthr76/k8s-pod-mutator/init
     pullPolicy: IfNotPresent
     # Overrides the image tag whose default is the chart appVersion.
     tag: ""
@@ -24,7 +24,7 @@ webhook:
       matching: {}
 
   image:
-    repository: bohlenc/k8s-pod-mutator-webhook
+    repository: ghcr.io/anthr76/k8s-pod-mutator/webhook
     pullPolicy: IfNotPresent
     # Overrides the image tag whose default is the chart appVersion.
     tag: ""
