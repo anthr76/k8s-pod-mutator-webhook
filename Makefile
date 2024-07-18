@@ -1,7 +1,7 @@
 TAG ?=
 
 IMAGE_VERSION ?= 1.1.1
-IMAGE_REPO ?= docker.io/bohlenc
+IMAGE_REPO ?= ghcr.io/anthr76/k8s-pod-mutator-webhook
 
 IMAGE_NAME_INIT ?= k8s-pod-mutator-init
 IMAGE_NAME_WEBHOOK ?= k8s-pod-mutator-webhook
