@@ -5,7 +5,7 @@ init:
   image:
     repository: ghcr.io/anthr76/k8s-pod-mutator-webhook/init
     pullPolicy: IfNotPresent
-    tag: "1.5.1"
+    tag: "1.5.5"
 
 webhook:
   logLevel: info
