@@ -3,7 +3,7 @@ init:
   logLevel: info
 
   image:
-    repository: ghcr.io/anthr76/k8s-pod-mutator/init
+    repository: ghcr.io/anthr76/k8s-pod-mutator-webhook/init
     pullPolicy: IfNotPresent
     tag: "1.5.1"
 
@@ -23,7 +23,7 @@ webhook:
       matching: {}
 
   image:
-    repository: ghcr.io/anthr76/k8s-pod-mutator/webhook
+    repository: ghcr.io/anthr76/k8s-pod-mutator-webhook/webhook
     pullPolicy: IfNotPresent
     tag: "1.5.1"
 
