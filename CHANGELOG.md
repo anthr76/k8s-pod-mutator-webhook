@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.5.2](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.5.1...k8s-pod-mutator-webhook-v1.5.2) (2024-07-19)
+
+
+### Bug Fixes
+
+* add renovate to appVersion ([913fdcf](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/913fdcf23bedde6f0d678f733b11b9118992c73b))
+* json syntax ([a7d4188](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/a7d4188c5743043bea4599f4ab64a5e2798734e6))
+* merge ([592ae69](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/592ae6922472b940186f1f4f7ea4b1de5bf707f0))
+* merge ([99b6c35](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/99b6c355bed2a4e5ae97cfe8e3cb156bd2c93fd0))
+* release-please config ([f2bfc1c](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/f2bfc1c070ccf390de77555dd3c9c78a33edd6c7))
+* release-please config ([bba7040](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/bba7040131721d7603cdc9c28a1ccfd7f818f262))
+
 ## [1.5.1](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.5.0...k8s-pod-mutator-webhook-v1.5.1) (2024-07-19)
 
 
