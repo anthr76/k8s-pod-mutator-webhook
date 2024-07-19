@@ -4,7 +4,7 @@ description: >-
   Kubernetes Mutating Admission Webhook for Pods. Applies arbitrary changes to
   Pod manifests.
 type: application
-version: 0.2.1
+version: 0.2.2
 # renovate depName=ghcr.io/anthr76/k8s-pod-mutator-webhook/webhook datasource=docker
 appVersion: 1.5.1
 sources:
