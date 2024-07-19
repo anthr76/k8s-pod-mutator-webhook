@@ -9,7 +9,8 @@
   "packageRules": [
     {
       "matchPackagePatterns": ["^ghcr.io\/anthr76\/k8s-pod-mutator-webhook.*"],
-      "automerge": true
+      "automerge": true,
+      "ignoreTests": true
     }
   ]
 }
