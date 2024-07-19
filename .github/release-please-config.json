@@ -21,7 +21,7 @@
   "plugins": [
     {
       "type": "linked-versions",
-      "groupName": "my group",
+      "groupName": "k8s-pod-mutator-webhook-group",
       "components": [
         "k8s-pod-mutator-webhook", "k8s-pod-mutator-webhook-helm"
       ]
