@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-helm-v0.2.0...k8s-pod-mutator-webhook-helm-v0.2.1) (2024-07-19)
+
+
+### Bug Fixes
+
+* add renovate to appVersion ([913fdcf](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/913fdcf23bedde6f0d678f733b11b9118992c73b))
+* move renovate to appVersion ([59764ab](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/59764ab3e30695e081ee0b6f57ffa60a7b6e51d4))
+
 ## [0.2.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-helm-v0.1.1...k8s-pod-mutator-webhook-helm-v0.2.0) (2024-07-19)
 
 
