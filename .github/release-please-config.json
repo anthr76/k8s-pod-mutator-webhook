@@ -25,5 +25,6 @@
       "components": [
         "k8s-pod-mutator-webhook", "k8s-pod-mutator-webhook-helm"
       ]
-
+    }
+  ]
 }
