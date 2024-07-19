@@ -2,11 +2,7 @@
   # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
   name: "Container: Image Build Init"
   on:
-    workflow_dispatch:
-      inputs:
-        version:
-          description: Tagged version
-          required: false
+    workflow_dispatch: {}
     pull_request:
       branches: ["main"]
       types: ["opened", "synchronize", "reopened"]
@@ -55,7 +51,7 @@
             tags: |
               type=ref,event=pr
               type=schedule
-              type=semver,pattern={{version}}
+              type=match,pattern=\d.\d.\d
               type=raw,value=latest,enable={{is_default_branch}}
 
         - name: Set up QEMU
