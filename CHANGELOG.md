@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.2.0...k8s-pod-mutator-webhook-v1.3.0) (2024-07-19)
+
+
+### Features
+
+* add init Dockerbuild ([44f3d7e](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/44f3d7ec0056c01f3d57f3e610f8b0eadcc316d0))
+
+
+### Bug Fixes
+
+* build paths ([0d876b5](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/0d876b50ef92e5eddfcd295bf89899b79afa92b8))
+
 ## [1.2.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.1.1...k8s-pod-mutator-webhook-v1.2.0) (2024-07-18)
 
 
