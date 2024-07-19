@@ -7,16 +7,22 @@
       branches: ["main"]
       types: ["opened", "synchronize", "reopened"]
       paths:
-        - .github/workflows/publish-image-webook.yaml
+        - .github/workflows/publish-image-webhook.yaml
         - "build/webhook/**/*"
+        - "cmd/webhook/**/*"
+        - "pkg/**/*"
+        - "internal/**/*"
     push:
       tags:
         - 'k8s-pod-mutator-webhook-v*'
       branches:
         - main
       paths:
-        - .github/workflows/publish-image-webook.yaml
+        - .github/workflows/publish-image-webhook.yaml
         - "build/webhook/**/*"
+        - "cmd/webhook/**/*"
+        - "pkg/**/*"
+        - "internal/**/*"
 
 
   jobs:

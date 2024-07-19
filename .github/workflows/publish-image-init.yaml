@@ -9,6 +9,9 @@
       paths:
         - .github/workflows/publish-image-init.yaml
         - "build/init/**/*"
+        - "cmd/init/**/*"
+        - "pkg/**/*"
+        - "internal/**/*"
     push:
       tags:
         - 'k8s-pod-mutator-webhook-v*'
@@ -17,6 +20,9 @@
       paths:
         - .github/workflows/publish-image-init.yaml
         - "build/init/**/*"
+        - "cmd/init/**/*"
+        - "pkg/**/*"
+        - "internal/**/*"
 
 
   jobs:
