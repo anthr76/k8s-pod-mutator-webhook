@@ -6,7 +6,7 @@ ENV CGO_ENABLED=$CGO_ENABLED
 COPY . /src
 WORKDIR /src
 
-RUN GOOS=linux GOARCH=amd64 go build -ldflags="-w -s" -o k8s-pod-mutator-webhook cmd/webhook/main.go
+RUN GOOS=linux go build -ldflags="-w -s" -o k8s-pod-mutator-webhook cmd/webhook/main.go
 
 ###
 FROM scratch
