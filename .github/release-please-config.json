@@ -10,7 +10,7 @@
     }
   },
   "release-type": "go",
-  "pull-request-title-pattern": "chore${scope}: Release${component} v${version}",
+  "pull-request-title-pattern": "feat${scope}: Release${component} v${version}",
   "extra-files": [
     {
       "type": "yaml",
