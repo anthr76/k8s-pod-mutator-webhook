@@ -6,11 +6,11 @@
       "component": "k8s-pod-mutator-webhook-helm"
     },
     ".": {
-      "component": "k8s-pod-mutator-webhook"
+      "component": "k8s-pod-mutator-webhook",
+      "pull-request-title-pattern": "feat${scope}: Release${component} v${version}"
     }
   },
   "release-type": "go",
-  "pull-request-title-pattern": "feat${scope}: Release${component} v${version}",
   "extra-files": [
     {
       "type": "yaml",
