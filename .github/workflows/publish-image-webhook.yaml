@@ -12,6 +12,8 @@
         - "cmd/webhook/**/*"
         - "pkg/**/*"
         - "internal/**/*"
+        - "go.**"
+        - ".dockerignore"
     push:
       tags:
         - 'k8s-pod-mutator-webhook-v*'
@@ -23,7 +25,8 @@
         - "cmd/webhook/**/*"
         - "pkg/**/*"
         - "internal/**/*"
-
+        - "go.**"
+        - ".dockerignore"
 
   jobs:
     publish-images:
