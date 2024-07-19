@@ -5,5 +5,11 @@
   ],
   "nix": {"enabled": true},
   "lockFileMaintenance": {"enabled": true, "automerge": true},
-  "forkProcessing": "enabled"
+  "forkProcessing": "enabled",
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^ghcr.io\/anthr76\/k8s-pod-mutator-webhook.*"],
+      "automerge": true
+    }
+  ]
 }
