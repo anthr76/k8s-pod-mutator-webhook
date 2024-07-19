@@ -30,16 +30,16 @@ jobs:
           fetch-depth: 0
 
       - name: Dispatch Container Build Actions
-        if: ${{ steps.release.outputs.paths_released['.'] }}
+        if: ${{ contains(steps.release.outputs.paths_released, '.') }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh workflow run publish-image-webhook.yaml --ref ${{ steps.release.outputs['packages/.--tag_name'] }}
-          gh workflow run publish-image-init.yaml --ref ${{ steps.release.outputs['packages/.--tag_name'] }}
+          gh workflow run publish-image-webhook.yaml --ref ${{ steps.release.outputs.tag_name }}
+          gh workflow run publish-image-init.yaml --ref ${{ steps.release.outputs.tag_name }}
 
       - name: Dispatch Helm Action
-        if: ${{ steps.release.outputs.paths_released['deploy/helm'] }}
+        if: ${{ contains(steps.release.outputs.paths_released, 'deploy/helm') }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh workflow run charts-publish-oci.yaml --ref${{ steps.release.outputs['packages/deploy/helm--tag_name'] }}
+          gh workflow run charts-publish-oci.yaml --ref ${{ steps['release'].outputs['deploy/helm--tag_name'] }}
