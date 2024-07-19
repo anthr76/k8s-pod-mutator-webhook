@@ -5,7 +5,7 @@ description: >-
   Pod manifests.
 type: application
 version: 0.2.0
-# renovate depName=ghcr.io/anthr76/k8s-pod-mutator-webhook/init datasource=docker
+# renovate depName=ghcr.io/anthr76/k8s-pod-mutator-webhook/webhook datasource=docker
 appVersion: 1.5.1
 sources:
   - https://github.com/anthr76/k8s-pod-mutator-webhook
