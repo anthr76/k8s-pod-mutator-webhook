@@ -3,12 +3,11 @@
   "packages": {
     "deploy/helm": {
       "release-type": "helm",
-      "component": "k8s-pod-mutator-webhook-helm",
-      "pull-request-title-pattern": "chore${scope}: Release${component} v${version}"
+      "component": "k8s-pod-mutator-webhook-helm"
     },
     ".": {
       "component": "k8s-pod-mutator-webhook",
-      "pull-request-title-pattern": "feat${scope}: Release${component} v${version}"
+      "exclude-paths": ["deploy/helm"]
     }
   },
   "release-type": "go",
@@ -18,5 +17,13 @@
       "path": "deploy/helm/Chart.yaml",
       "jsonpath": "$.appVersion"
     }
-  ]
+  ],
+  "plugins": [
+    {
+      "type": "linked-versions",
+      "groupName": "my group",
+      "components": [
+        "k8s-pod-mutator-webhook", "k8s-pod-mutator-webhook-helm"
+      ]
+
 }
