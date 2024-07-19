@@ -5,8 +5,7 @@ init:
   image:
     repository: ghcr.io/anthr76/k8s-pod-mutator/init
     pullPolicy: IfNotPresent
-    # Overrides the image tag whose default is the chart appVersion.
-    tag: ""
+    tag: "1.5.1"
 
 webhook:
   logLevel: info
@@ -26,8 +25,7 @@ webhook:
   image:
     repository: ghcr.io/anthr76/k8s-pod-mutator/webhook
     pullPolicy: IfNotPresent
-    # Overrides the image tag whose default is the chart appVersion.
-    tag: ""
+    tag: "1.5.1"
 
   httpsPort: 8443
 

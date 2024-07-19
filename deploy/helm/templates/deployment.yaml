@@ -29,7 +29,7 @@ spec:
       serviceAccountName: {{ include "k8s-pod-mutator-webhook.fullname" . }}
       initContainers:
         - name: init
-          image: "{{ .Values.init.image.repository }}:{{ .Values.init.image.tag | default .Chart.AppVersion }}"
+          image: "{{ .Values.init.image.repository }}:{{ .Values.init.image.tag }}"
           imagePullPolicy: {{ .Values.init.image.pullPolicy }}
           args:
             - --log-level={{ .Values.init.logLevel | default "info" }}
@@ -43,7 +43,7 @@ spec:
             mountPath: /etc/k8s-pod-mutator/config
       containers:
         - name: webhook
-          image: "{{ .Values.webhook.image.repository }}:{{ .Values.webhook.image.tag | default .Chart.AppVersion }}"
+          image: "{{ .Values.webhook.image.repository }}:{{ .Values.webhook.image.tag }}"
           imagePullPolicy: {{ .Values.webhook.image.pullPolicy }}
           args:
           - --log-level={{ .Values.webhook.logLevel | default "info" }}
