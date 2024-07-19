@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.3.6...k8s-pod-mutator-webhook-v1.4.0) (2024-07-19)
+
+
+### Features
+
+* **ci:** add helm publish action revise dispatch ([ce95e27](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/ce95e27272c27821fcdfce4b3bfe5624d924dcee))
+
 ## [1.3.6](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.3.5...k8s-pod-mutator-webhook-v1.3.6) (2024-07-19)
 
 
