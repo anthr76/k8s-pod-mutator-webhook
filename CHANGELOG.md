@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.6.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.5.5...k8s-pod-mutator-webhook-v1.6.0) (2024-07-19)
+
+
+### Features
+
+* enable renovate automerge ([252a582](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/252a58256ed6a9e9c08814a3ebffa22d2d631e18))
+
+
+### Bug Fixes
+
+* ignoreTests until tests exists ([093106b](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/093106be9121c8008754f2a0d45e3c0c15eac828))
+
 ## [1.5.5](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.5.4...k8s-pod-mutator-webhook-v1.5.5) (2024-07-19)
 
 
