@@ -10,12 +10,5 @@
       "exclude-paths": ["deploy/helm"]
     }
   },
-  "release-type": "go",
-  "extra-files": [
-    {
-      "type": "yaml",
-      "path": "deploy/helm/Chart.yaml",
-      "jsonpath": "$.appVersion"
-    }
-  ]
+  "release-type": "go"
 }
