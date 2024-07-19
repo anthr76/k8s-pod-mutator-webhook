@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-helm-v0.1.1...k8s-pod-mutator-webhook-helm-v0.2.0) (2024-07-19)
+
+
+### Features
+
+* add sources to Chart.yaml ([9da9b03](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/9da9b03a1aaec01d771916ed2bdab0ce8aedc819))
+
 ## [0.1.1](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-helm-v0.1.0...k8s-pod-mutator-webhook-helm-v0.1.1) (2024-07-18)
 
 
