@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.6](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.3.5...k8s-pod-mutator-webhook-v1.3.6) (2024-07-19)
+
+
+### Bug Fixes
+
+* **ci:** use match instead of semver avoid passing version ([9e0ff79](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/9e0ff79d86b6e23975223e93c53d26b04e7be707))
+
 ## [1.3.5](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.3.4...k8s-pod-mutator-webhook-v1.3.5) (2024-07-19)
 
 
