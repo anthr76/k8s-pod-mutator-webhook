@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.5.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.4.0...k8s-pod-mutator-webhook-v1.5.0) (2024-07-19)
+
+
+### Features
+
+* add sources to Chart.yaml ([9da9b03](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/9da9b03a1aaec01d771916ed2bdab0ce8aedc819))
+
+
+### Bug Fixes
+
+* release-please config ([75c2c93](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/75c2c93abfed703857d96e3a2cab978cd84999d7))
+
 ## [1.4.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.3.6...k8s-pod-mutator-webhook-v1.4.0) (2024-07-19)
 
 
