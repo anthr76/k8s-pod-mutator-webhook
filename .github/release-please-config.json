@@ -6,10 +6,7 @@
       "component": "k8s-pod-mutator-webhook-helm"
     },
     ".": {
-      "component": "k8s-pod-mutator-webhook",
-      "exclude-paths": [
-        "deploy"
-      ]
+      "component": "k8s-pod-mutator-webhook"
     }
   },
   "release-type": "go",

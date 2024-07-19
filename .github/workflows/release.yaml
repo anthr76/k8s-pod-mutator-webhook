@@ -15,8 +15,6 @@ jobs:
       pull-requests: write
       actions: write
     runs-on: ubuntu-22.04
-    outputs:
-      release_created: ${{ steps.release.outputs.release_created }}
     steps:
       - name: release
         uses: googleapis/release-please-action@v4
