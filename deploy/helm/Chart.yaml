@@ -6,3 +6,5 @@ description: >-
 type: application
 version: 0.1.1
 appVersion: 1.4.0
+sources:
+  - https://github.com/anthr76/k8s-pod-mutator-webhook
