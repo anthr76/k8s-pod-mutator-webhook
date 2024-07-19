@@ -31,10 +31,17 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Dispatch Actions
-        if: ${{ steps.release.outputs.release_created }}
+      - name: Dispatch Container Build Actions
+        if: ${{ steps.release.outputs['packages/.--release_created'] }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh workflow run publish-image-webhook.yaml --ref k8s-pod-mutator-webhook-v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}
-          gh workflow run publish-image-init.yaml --ref k8s-pod-mutator-webhook-v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}.${{ steps.release.outputs.patch }}
+          gh workflow run publish-image-webhook.yaml --ref ${{ steps.release.outputs['packages/.--tag_name'] }}
+          gh workflow run publish-image-init.yaml --ref ${{ steps.release.outputs['packages/.--tag_name'] }}
+
+      - name: Dispatch Helm Action
+        if: ${{ steps.release.outputs['packages/deploy/helm--release_created'] }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run charts-publish-oci.yaml --ref${{ steps.release.outputs['packages/deploy/helm--tag_name'] }}

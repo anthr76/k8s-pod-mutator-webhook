@@ -1,0 +1,37 @@
+---
+  # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+  name: "Charts: Publish to GHCR OCI"
+
+  on:
+    release:
+      types: ["published", "created"]
+    workflow_dispatch: {}
+
+  jobs:
+    publish-charts:
+      name: Publish chart
+      permissions:
+        contents: write
+        packages: write
+      runs-on: ubuntu-22.04
+      steps:
+        - uses: actions/checkout@v4
+          with:
+            fetch-depth: 0
+
+        - name: Login to GitHub Container Registry
+          uses: docker/login-action@v3
+          with:
+            registry: ghcr.io
+            username: ${{ github.actor }}
+            password: ${{ secrets.GITHUB_TOKEN }}
+
+        - name: Install Helm
+          uses: azure/setup-helm@v4
+
+        - name: Package & Push Helm Charts
+          shell: bash
+          run: |
+            helm package deploy/helm --dependency-update
+            pkg=$(ls k8s-pod-mutator-webhook-*.tgz)
+            helm push "${pkg}" oci://ghcr.io/${{ github.repository }}/chart
