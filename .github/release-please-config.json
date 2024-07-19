@@ -3,7 +3,8 @@
   "packages": {
     "deploy/helm": {
       "release-type": "helm",
-      "component": "k8s-pod-mutator-webhook-helm"
+      "component": "k8s-pod-mutator-webhook-helm",
+      "pull-request-title-pattern": "chore${scope}: Release${component} v${version}"
     },
     ".": {
       "component": "k8s-pod-mutator-webhook",
