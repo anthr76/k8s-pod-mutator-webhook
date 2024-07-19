@@ -17,15 +17,5 @@
       "path": "deploy/helm/Chart.yaml",
       "jsonpath": "$.appVersion"
     }
-  ],
-  "plugins": [
-    {
-      "type": "linked-versions",
-      "groupName": "k8s-pod-mutator-webhook-group",
-      "components": [
-        "k8s-pod-mutator-webhook", "k8s-pod-mutator-webhook-helm"
-      ],
-      "merge": false
-    }
   ]
 }
