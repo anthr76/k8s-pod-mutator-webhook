@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.4](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.3.3...k8s-pod-mutator-webhook-v1.3.4) (2024-07-19)
+
+
+### Bug Fixes
+
+* **ci:** ensure repo is checked out ([498daf2](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/498daf2eb2072ced2885f6de0637dda367b44884))
+
 ## [1.3.3](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.3.2...k8s-pod-mutator-webhook-v1.3.3) (2024-07-19)
 
 
