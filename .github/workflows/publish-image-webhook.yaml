@@ -2,7 +2,11 @@
   # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
   name: "Container: Image Build Webhook"
   on:
-    workflow_dispatch: {}
+    workflow_dispatch:
+      inputs:
+        version:
+          description: Tagged version
+          required: false
     pull_request:
       branches: ["main"]
       types: ["opened", "synchronize", "reopened"]
@@ -50,7 +54,7 @@
             tags: |
               type=ref,event=pr
               type=schedule
-              type=semver,pattern={{version}}
+              type=semver,pattern={{version}},value=${{inputs.version}}
               type=raw,value=latest,enable={{is_default_branch}}
 
         - name: Set up QEMU
