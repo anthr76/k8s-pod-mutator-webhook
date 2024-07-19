@@ -25,12 +25,12 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@v4
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.release_created }} || ${{ steps.release.outputs.releases_created }}
         with:
           fetch-depth: 0
 
       - name: Dispatch Container Build Actions
-        if: ${{ steps.release.outputs['packages/.--release_created'] }}
+        if: ${{ steps.release.outputs.paths_released['.'] }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -38,7 +38,7 @@ jobs:
           gh workflow run publish-image-init.yaml --ref ${{ steps.release.outputs['packages/.--tag_name'] }}
 
       - name: Dispatch Helm Action
-        if: ${{ steps.release.outputs['packages/deploy/helm--release_created'] }}
+        if: ${{ steps.release.outputs.paths_released['deploy/helm'] }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
