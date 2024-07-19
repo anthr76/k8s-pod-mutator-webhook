@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.3](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.3.2...k8s-pod-mutator-webhook-v1.3.3) (2024-07-19)
+
+
+### Bug Fixes
+
+* dispatch actions (rename and token) ([e1a94c8](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/e1a94c89fccc925eeed82b88672e19831fefd993))
+
 ## [1.3.2](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.3.1...k8s-pod-mutator-webhook-v1.3.2) (2024-07-19)
 
 
