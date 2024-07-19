@@ -68,5 +68,3 @@ data:
       {{- end }}
   patch.yaml: |-
     {{- tpl .Values.webhook.patch $ | nindent 4 }}
-
-
