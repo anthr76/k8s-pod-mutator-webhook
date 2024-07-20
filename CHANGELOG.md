@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.6.0...k8s-pod-mutator-webhook-v1.7.0) (2024-07-20)
+
+
+### Features
+
+* **container:** update image golang ( 1.15.8 → 1.22.5 ) ([#2](https://github.com/anthr76/k8s-pod-mutator-webhook/issues/2)) ([7a699a5](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/7a699a54eb75c17577ff80ec634160c71ba3effc))
+
 ## [1.6.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.5.5...k8s-pod-mutator-webhook-v1.6.0) (2024-07-19)
 
 
