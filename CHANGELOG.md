@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.7.0...k8s-pod-mutator-webhook-v1.8.0) (2024-07-22)
+
+
+### Features
+
+* **deps:** update kubernetes packages ( v0.20.2 → v0.30.3 ) ([#3](https://github.com/anthr76/k8s-pod-mutator-webhook/issues/3)) ([5f97e4c](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/5f97e4c9516bf9aeda7fea56c190f1c6cafca3a3))
+
 ## [1.7.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.6.0...k8s-pod-mutator-webhook-v1.7.0) (2024-07-20)
 
 
