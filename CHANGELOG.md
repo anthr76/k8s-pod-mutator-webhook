@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.8.0...k8s-pod-mutator-webhook-v1.9.0) (2024-08-07)
+
+
+### Features
+
+* **deps:** update module github.com/sirupsen/logrus ( v1.7.0 → v1.9.3 ) ([#5](https://github.com/anthr76/k8s-pod-mutator-webhook/issues/5)) ([b636e06](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/b636e0604c1561d5df321a9ad0b614a87d8a8ac6))
+
 ## [1.8.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-v1.7.0...k8s-pod-mutator-webhook-v1.8.0) (2024-07-22)
 
 
