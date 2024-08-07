@@ -3,7 +3,7 @@ module k8s-pod-mutator-webhook
 require (
 	github.com/evanphx/json-patch v4.12.0+incompatible
 	github.com/sirupsen/logrus v1.9.3
-	github.com/spf13/cobra v1.1.3
+	github.com/spf13/cobra v1.8.1
 	github.com/stretchr/testify v1.8.4
 	gomodules.xyz/jsonpatch/v3 v3.0.1
 	k8s.io/api v0.30.3
@@ -180,7 +180,7 @@ require (
 	github.com/coreos/go-semver v0.3.0 // indirect
 	github.com/coreos/go-systemd v0.0.0-20190321100706-95778dfbb74e // indirect
 	github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f // indirect
-	github.com/cpuguy83/go-md2man/v2 v2.0.0 // indirect
+	github.com/cpuguy83/go-md2man/v2 v2.0.4 // indirect
 	github.com/creack/pty v1.1.9 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
@@ -263,7 +263,7 @@ require (
 	github.com/iancoleman/strcase v0.2.0 // indirect
 	github.com/ianlancetaylor/demangle v0.0.0-20200824232613-28f6c0f3b639 // indirect
 	github.com/imdario/mergo v0.3.6 // indirect
-	github.com/inconshreveable/mousetrap v1.0.0 // indirect
+	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/jonboulle/clockwork v0.1.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
@@ -330,7 +330,7 @@ require (
 	github.com/remyoudompheng/bigfft v0.0.0-20200410134404-eec4a21b6bb0 // indirect
 	github.com/rogpeppe/fastuuid v1.2.0 // indirect
 	github.com/rogpeppe/go-internal v1.10.0 // indirect
-	github.com/russross/blackfriday/v2 v2.0.1 // indirect
+	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/ruudk/golang-pdf417 v0.0.0-20201230142125-a7e3863a1245 // indirect
 	github.com/ryanuber/columnize v0.0.0-20160712163229-9b3edd62028f // indirect
 	github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529 // indirect
