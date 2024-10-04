@@ -11,7 +11,7 @@ data:
     metadata:
       name: {{ include "k8s-pod-mutator-webhook.fullname" . }}
       labels:
-      {{- include "k8s-pod-mutator-webhook.labels" . | nindent 4 }}
+      {{- include "k8s-pod-mutator-webhook.labels" . | nindent 8 }}
     webhooks:
       - name: webhook.k8s-pod-mutator.io
         admissionReviewVersions: ["v1"]
@@ -45,7 +45,7 @@ data:
           {{- if .Values.webhook.policy.namespaceLabels.matching }}
           matchLabels:
           {{- range $key, $value := .Values.webhook.policy.namespaceLabels.matching }}
-          {{- printf "%s: %s" $key (tpl $value $ | quote) | nindent 8 }}
+          {{- printf "%s: %s" $key (tpl $value $ | quote) | nindent 12 }}
           {{- end }}
         {{- end }}
         {{- if or (or .Values.webhook.policy.podLabels.excluded .Values.webhook.policy.podLabels.included) .Values.webhook.policy.podLabels.matching }}
@@ -62,7 +62,7 @@ data:
           {{- if .Values.webhook.policy.podLabels.matching }}
           matchLabels:
           {{- range $key, $value := .Values.webhook.policy.podLabels.matching }}
-          {{- printf "%s: %s" $key (tpl $value $ | quote) | nindent 8 }}
+          {{- printf "%s: %s" $key (tpl $value $ | quote) | nindent 12 }}
         {{- end }}
         {{- end }}
       {{- end }}
