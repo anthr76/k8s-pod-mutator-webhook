@@ -25,7 +25,7 @@ webhook:
   image:
     repository: ghcr.io/anthr76/k8s-pod-mutator-webhook/webhook
     pullPolicy: IfNotPresent
-    tag: "1.8.0"
+    tag: "1.9.0"
 
   httpsPort: 8443
 
