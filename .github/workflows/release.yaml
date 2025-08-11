@@ -24,7 +24,7 @@ jobs:
           manifest-file: .github/.release-please-manifest.json
 
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
         if: ${{ steps.release.outputs.release_created }} || ${{ steps.release.outputs.releases_created }}
         with:
           fetch-depth: 0
