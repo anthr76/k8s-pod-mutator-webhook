@@ -38,13 +38,13 @@
 
       steps:
         - name: Checkout repository
-          uses: actions/checkout@v4
+          uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
           with:
             fetch-depth: 0
 
         - name: Docker meta
           id: meta
-          uses: docker/metadata-action@v5
+          uses: docker/metadata-action@c299e40c65443455700f0fdfc63efafe5b349051 # v5
           with:
             images: ghcr.io/${{ github.repository }}/webhook
             tags: |
