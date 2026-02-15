@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-helm-v0.5.0...k8s-pod-mutator-webhook-helm-v0.6.0) (2026-02-15)
+
+
+### Features
+
+* **container:** update image ghcr.io/anthr76/k8s-pod-mutator-webhook/init ( 1.8.0 → 1.9.0 ) ([b0fc018](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/b0fc018ed1e22f095c2d6833c75d525a1ad74cb0))
+* **container:** update image ghcr.io/anthr76/k8s-pod-mutator-webhook/webhook ( 1.8.0 → 1.9.0 ) ([3a9440e](https://github.com/anthr76/k8s-pod-mutator-webhook/commit/3a9440e6ad1fae45ec6537b3d2e169a0040d30b7))
+
 ## [0.5.0](https://github.com/anthr76/k8s-pod-mutator-webhook/compare/k8s-pod-mutator-webhook-helm-v0.4.0...k8s-pod-mutator-webhook-helm-v0.5.0) (2024-10-04)
 
 
