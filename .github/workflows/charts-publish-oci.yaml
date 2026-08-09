@@ -27,7 +27,7 @@
             password: ${{ secrets.GITHUB_TOKEN }}
 
         - name: Install Helm
-          uses: azure/setup-helm@v4
+          uses: azure/setup-helm@9bc31f4ebc9c6b171d7bfbaa5d006ae7abdb4310 # v5.0.1
 
         - name: Package & Push Helm Charts
           shell: bash
