@@ -14,7 +14,7 @@ jobs:
       contents: write
       pull-requests: write
       actions: write
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: release
         uses: googleapis/release-please-action@v4
